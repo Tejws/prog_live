@@ -113,7 +113,14 @@
         
         <section class="main-slider clearfix">
             <div class="swiper-container thm-swiper__slider"
-                data-swiper-options='{"slidesPerView": 1,"loop": true,"speed": 0,"pagination": {"el": "#main-slider-pagination","type": "bullets","clickable": true},"navigation": {"nextEl": "#main-slider__swiper-button-next","prevEl": "#main-slider__swiper-button-prev"},"autoplay": {"delay": 5000}}'>
+            data-swiper-options='{
+                "slidesPerView": 1,
+                "loop": false,              /* Disable looping */
+                "speed": 0,                 /* No sliding animation */
+                "pagination": false,        /* Remove pagination bullets */
+                "navigation": false,        /* Remove navigation arrows */
+                "autoplay": false           /* Disable autoplay */
+            }'>
                 
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -158,13 +165,16 @@
 /* Mobile Image */
 .image-layer.mobile-image {
     background-image: url(assets/images/resources/one\ mobile\ hero.png);
-    margin-top: 90px;
+    
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    
+    background-position: center center; /* Center the image */
+    
     width: 100%;
     height: 100vh;
     display: none;
+    justify-content: center;
+    align-items: center;
     opacity: 1 !important;
 }
 
@@ -182,6 +192,14 @@
     }
     .image-layer.mobile-image {
         display: block;
+        background-image: url(assets/images/resources/one\ mobile\ hero.png);
+        margin-top: 90px;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+        opacity: 1 !important;
     }
     
     /* Adjust text size and spacing for mobile */

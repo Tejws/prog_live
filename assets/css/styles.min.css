@@ -7661,8 +7661,9 @@ ul {
     }
 
     .main-slider .container {
-        padding-top: 614px;
-        padding-bottom: 192px
+        padding-top: px;
+        padding-bottom: 192px;
+        
     }
 
     .main-slider-two__title {
