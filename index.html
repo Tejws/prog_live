@@ -1133,63 +1133,70 @@
         </ul>
     </div>
     <div class="modal fade" id="priceModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="pricingModal" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header border-0 pb-0" style="background-color: var(--aports-primary);"><button
-                        type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                <div class="modal-body p-0" style="background-color: var(--aports-primary);">
-                    <div class="contact-one__right">
-                        <div class="row">
-                            <div class="contact-one__form-box py-3 px-3">
-                                <p class="text-center mb-3"><img src="assets/images/loader.png"
-                                        width="150"></p>
-                                <h3 class="text-center mb-3 axn-title">Unlock Exclusive Offers</h3>
-                                <p class="text-center mb-3 small" style="line-height: 1.4;">Share your details now to
-                                    seize the best deal and schedule your personalized visit. Your dream property awaits
-                                    &#8211; let's make it yours!</p>
-                                <form action="api/service/contact-us" method="post"
-                                    class="contact-one__form contact-one-validated theme-form">
-                                    <div class="row">
-                                        <div class="col-xl-12 col-lg-12 col-md-12">
-                                            <div class="contact-one__input-box"><input type="text"
-                                                    placeholder="Your Name" name="name"
-                                                    data-msg="Please enter your name" data-rule="required">
-                                                <div class="validate small text-danger"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-12 col-lg-12 col-md-12">
-                                            <div class="contact-one__input-box"><input type="number"
-                                                    placeholder="Phone Number" name="phone"
-                                                    data-msg="Please enter a valid Phone Number" data-rule="minlen:10">
-                                                <div class="validate small text-danger"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-12 col-lg-12 col-md-12">
-                                            <div class="contact-one__input-box"><input type="email"
-                                                    placeholder="Email Address" name="email"
-                                                    data-msg="Please enter a valid Email Address" data-rule="email">
-                                                <div class="validate small text-danger"></div>
-                                            </div>
+    aria-labelledby="pricingModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-0 pb-0" style="background-color: var(--aports-primary);">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0" style="background-color: var(--aports-primary);">
+                <div class="contact-one__right">
+                    <div class="row">
+                        <div class="contact-one__form-box py-3 px-3">
+                            <p class="text-center mb-3">
+                                <img src="assets/images/resources/Progressive-logo-1-300x46.png" width="150">
+                            </p>
+                            <h3 class="text-center mb-3 axn-title">Unlock Exclusive Offers</h3>
+                            <p class="text-center mb-3 small text-white" style="line-height: 1.4;">
+                                Share your details now to seize the best deal and schedule your personalized visit.
+                                Your dream property awaits &#8211; let's make it yours!
+                            </p>
+                            <form action="api/service/contact-us" method="post"
+                                class="contact-one__form contact-one-validated theme-form">
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12 col-md-12">
+                                        <div class="contact-one__input-box">
+                                            <input type="text" placeholder="Your Name" name="name"
+                                                data-msg="Please enter your name" data-rule="required">
+                                            <div class="validate small text-danger"></div>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-xl-12">
-                                            <div class="contact-one__btn-box"><input name="sub" type="hidden"><input
-                                                    name="mssg" type="hidden"><button type="submit"
-                                                    class="thm-btn contact-one__btn border-0 btn-axn">Get Offer</button>
-                                                <div class="response mt-2"></div>
-                                            </div>
+                                    <div class="col-xl-12 col-lg-12 col-md-12">
+                                        <div class="contact-one__input-box">
+                                            <input type="number" placeholder="Phone Number" name="phone"
+                                                data-msg="Please enter a valid Phone Number" data-rule="minlen:10">
+                                            <div class="validate small text-danger"></div>
                                         </div>
                                     </div>
-                                </form>
-                            </div>
+                                    <div class="col-xl-12 col-lg-12 col-md-12">
+                                        <div class="contact-one__input-box">
+                                            <input type="email" placeholder="Email Address" name="email"
+                                                data-msg="Please enter a valid Email Address" data-rule="email">
+                                            <div class="validate small text-danger"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <div class="contact-one__btn-box">
+                                            <input name="sub" type="hidden">
+                                            <input name="mssg" type="hidden">
+                                            <button type="submit" class="thm-btn contact-one__btn border-0 btn-axn">
+                                                Get Offer
+                                            </button>
+                                            <div class="response mt-2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/plugins.min.js"></script>
